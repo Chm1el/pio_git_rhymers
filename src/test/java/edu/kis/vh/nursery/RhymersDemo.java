@@ -1,7 +1,7 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
-import edu.kis.vh.nursery.factory.Rhymersfactory;
+import edu.kis.vh.nursery.list.factory.DefaultRhymersFactory;
+import edu.kis.vh.nursery.list.factory.Rhymersfactory;
 
 class RhymersDemo {
 
