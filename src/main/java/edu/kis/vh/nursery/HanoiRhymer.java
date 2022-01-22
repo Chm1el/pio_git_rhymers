@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 //kombinacja ctrl+-> lub ctrl+<- przesuwa znacznik na początek lub koniec slowa gdy napotka znak nie będący literą przychodzi tylko przez ten znak
 public class HanoiRhymer extends DefaultCountingOutRhymer {
 
-    int totalRejected = 0;
+    private int totalRejected = 0;
 
     public int reportRejected() {
         return totalRejected;
@@ -14,5 +14,13 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
             totalRejected++;
         else
             super.countIn(in);
+    }
+
+    public int getTotalRejected() {
+        return totalRejected;
+    }
+
+    public void setTotalRejected(int totalRejected) {
+        this.totalRejected = totalRejected;
     }
 }
