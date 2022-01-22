@@ -6,6 +6,10 @@ public class DefaultCountingOutRhymer {
     private static final int IS_NEGATIVE = -1;
     private static final int MAX_SIZE = 12;
 
+    public int getTotal() {
+        return total;
+    }
+
     private int total = IS_NEGATIVE;
     private int[] numbers = new int[MAX_SIZE];
 
